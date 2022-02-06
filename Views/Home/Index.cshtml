@@ -1,0 +1,57 @@
+﻿
+@model IEnumerable<To_doProject.Models.ToDoList>
+
+@{
+    ViewData["Title"] = "ToDoList";
+}
+
+@*<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+*@
+<head>
+     <style type="text/css">
+        div {
+            text-align: center;
+        }
+  
+        #heading {
+            font-weight: 700;
+        }
+    </style>
+
+</head>
+
+
+<p>Todo List!</p>
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+<body>
+    <div class="container">
+        <h1 class="text-center display-4">Employee Table</h1>
+  
+        <div class="row border border-dark bg-success" id="heading">
+            
+            <div class="col-2 border border-dark">Serial No</div>
+            <div class="col-2 border border-dark">Title</div>
+            <div class="col-2 border border-dark">Description</div>
+            <div class="col-2 border border-dark">IsCompleted</div>
+            <div class="col-2 border border-dark">CreatedDate</div>
+        </div>
+  
+       
+  
+       @* <div class="row border border-dark bg-info">
+            <div class="col border">@Html.ValueForModel(model => model.SerialNo)</div>
+            <div class="col border">Mary</div>
+            <div class="col border">Testing</div>
+            <div class="col border">30000</div>
+            <div class="col border">30000</div>
+        </div>*@
+  
+       
+    </div>
+</body>
